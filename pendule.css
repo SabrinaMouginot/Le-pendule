@@ -17,7 +17,7 @@
     top: 140px;
     left: 100px;
     padding-top: 100px;
-    background: pink;
+    /* background: pink; */
 }
 
 .balancier::before{
@@ -49,6 +49,24 @@
     height: 100px;
     width: 1px;
     top: -100px;
-    left: 10px;
+    left: 19px;
     background: #bdc3c7;
+}
+
+.balancier .ball-1 {
+    animation: ball-1 0.8s ease-out infinite alternate;
+
+}
+
+.balancier .ball-5 {
+    animation: ball-5 0.8s ease-out .8s infinite alternate;
+}
+
+@keyframes ball-1{
+    0%, 50%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
 }
