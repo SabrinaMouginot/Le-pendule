@@ -39,4 +39,16 @@
     height: 40px;
     background: #fff;
     border-radius: 50%;
+    transform-origin: 50% -100px; /* pour le mouvement de balancier: changer l'origine des transformations, ici 50% sur l'axe X et -100% sur Y ( https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin ) */
+}
+
+.balancier .ball::before{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100px;
+    width: 1px;
+    top: -100px;
+    left: 10px;
+    background: #bdc3c7;
 }
